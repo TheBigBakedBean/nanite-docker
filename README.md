@@ -1,3 +1,5 @@
+> Currently the versions from 0.1.0 to 0.1.2 have identical code, due to formatting issues with the README I have pushed some minor changes but otherwise they are the same.
+
 # nanite-docker
 Nanite docker is an intermediate representation of a Dockerfile.
 It intends to provide a strongly typed library for working with Dockerfiles in your code.
@@ -8,10 +10,9 @@ It intends to provide a strongly typed library for working with Dockerfiles in y
 Add the following to your Cargo.toml:
 ```toml
 [dependencies]
-nanite-docker = "0.1.0"
+nanite-docker = "0.1.2"
 ```
 
-//!
 ## Examples
 ### Basic Example
 Note that this example lacks an assert_eq!, see the specific instruction documentation to see what each instruction renders as
@@ -34,10 +35,10 @@ let dockerfile = Dockerfile {
         ]
     }]
 };
-//!
+
 let built_dockerfile = format!("{dockerfile}");
 ```
-//!
+
 ### Long Example (Showcases most features)
 ```rust
 use nanite_docker::*;
@@ -57,13 +58,13 @@ fn main() {
                     value: "true".into(),
                 }),
             ],
-//!
+
             from: From {
                 platform: None,
                 image: "$BASE_IMAGE".into(),
                 alias: None,
             },
-//!
+            
             // ── Instructions ─────────────────────────────────────────
             instructions: vec![
                 // MAINTAINER (legacy)
