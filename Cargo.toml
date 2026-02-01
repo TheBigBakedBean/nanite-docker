@@ -2,5 +2,10 @@
 name = "nanite-docker"
 version = "0.1.0"
 edition = "2024"
+license = "MIT"
+description = "A low level Dockerfile Intermediate Representation"
+keywords = ["docker", "dockerfile"]
+repository = "https://github.com/TheBigBakedBean/nanite-docker"
+readme = "README.md"
 
 [dependencies]
